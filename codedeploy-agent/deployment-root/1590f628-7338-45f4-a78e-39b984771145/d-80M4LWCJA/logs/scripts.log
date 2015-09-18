@@ -1,0 +1,5 @@
+2015-09-18 01:41:42 LifecycleEvent - BeforeInstall
+2015-09-18 01:41:42 Script - scripts/installapache.sh
+2015-09-18 01:41:43 Script - scripts/startapache.sh
+2015-09-18 01:41:46 LifecycleEvent - AfterInstall
+2015-09-18 01:41:46 Script - scripts/restartapache.sh

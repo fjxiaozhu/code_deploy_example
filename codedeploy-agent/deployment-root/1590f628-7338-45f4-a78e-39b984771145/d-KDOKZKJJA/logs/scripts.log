@@ -1,0 +1,6 @@
+2015-09-18 03:50:26 LifecycleEvent - BeforeInstall
+2015-09-18 03:50:26 Script - scripts/install_dependencies
+2015-09-18 03:50:26 [stderr]/opt/codedeploy-agent/deployment-root/1590f628-7338-45f4-a78e-39b984771145/d-KDOKZKJJA/deployment-archive/scripts/install_dependencies: line 3: apt-get: command not found
+2015-09-18 03:50:26 [stderr]/opt/codedeploy-agent/deployment-root/1590f628-7338-45f4-a78e-39b984771145/d-KDOKZKJJA/deployment-archive/scripts/install_dependencies: line 4: apt-get: command not found
+2015-09-18 03:50:26 [stderr]/opt/codedeploy-agent/deployment-root/1590f628-7338-45f4-a78e-39b984771145/d-KDOKZKJJA/deployment-archive/scripts/install_dependencies: line 5: apt-get: command not found
+2015-09-18 03:50:26 [stderr]/opt/codedeploy-agent/deployment-root/1590f628-7338-45f4-a78e-39b984771145/d-KDOKZKJJA/deployment-archive/scripts/install_dependencies: line 6: a2enmod: command not found

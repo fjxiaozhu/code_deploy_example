@@ -1,0 +1,375 @@
+2015-09-18 01:46:21 LifecycleEvent - BeforeInstall
+2015-09-18 01:46:21 Script - scripts/install_dependencies.sh
+2015-09-18 01:46:21 [stdout]Loaded plugins: priorities, update-motd, upgrade-helper
+2015-09-18 01:46:21 [stderr]There is no installed groups file.
+2015-09-18 01:46:21 [stderr]Maybe run: yum groups mark convert (see man yum)
+2015-09-18 01:46:21 [stdout]Resolving Dependencies
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package crypto-utils.x86_64 0:2.4.1-42.9.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Newt) for package: crypto-utils-2.4.1-42.9.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package mod_perl.x86_64 0:2.0.7-7.27.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Data::Dumper) for package: mod_perl-2.0.7-7.27.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::MakeMaker) for package: mod_perl-2.0.7-7.27.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Linux::Pid) for package: mod_perl-2.0.7-7.27.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(BSD::Resource) for package: mod_perl-2.0.7-7.27.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package mod_ssl.x86_64 1:2.2.31-1.6.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package mod_wsgi-python27.x86_64 0:3.2-6.11.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package mysql-server.noarch 0:5.5-1.6.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: mysql55-server >= 5.5 for package: mysql-server-5.5-1.6.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package php.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: php-common(x86-64) = 5.3.29-1.8.amzn1 for package: php-5.3.29-1.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: php-cli(x86-64) = 5.3.29-1.8.amzn1 for package: php-5.3.29-1.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package php-gd.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: libXpm.so.4()(64bit) for package: php-gd-5.3.29-1.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: libt1.so.5()(64bit) for package: php-gd-5.3.29-1.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package php-pdo.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package php-pear.noarch 1:1.9.5-2.17.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: php-posix for package: 1:php-pear-1.9.5-2.17.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package php-xml.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package libXpm.x86_64 0:3.5.10-2.9.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package mysql55-server.x86_64 0:5.5.42-1.4.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: real-mysql55-common(x86-64) = 5.5.42-1.4.amzn1 for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: real-mysql55(x86-64) = 5.5.42-1.4.amzn1 for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: real-mysql55-libs(x86-64) = 5.5.42-1.4.amzn1 for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(DBI) for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl-DBI for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl-DBD-MySQL for package: mysql55-server-5.5.42-1.4.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package perl-BSD-Resource.x86_64 0:1.29.03-3.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-Data-Dumper.x86_64 0:2.145-3.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-ExtUtils-MakeMaker.noarch 0:6.68-3.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::Installed) for package: perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Test::Harness) for package: perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::Manifest) for package: perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::Packlist) for package: perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::Install) for package: perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package perl-Linux-Pid.x86_64 0:0.04-8.4.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-Newt.x86_64 0:1.08-36.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package php-cli.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package php-common.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package php-process.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package t1lib.x86_64 0:5.1.2-6.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package mysql55.x86_64 0:5.5.42-1.4.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package mysql55-common.x86_64 0:5.5.42-1.4.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package mysql55-libs.x86_64 0:5.5.42-1.4.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-DBD-MySQL.x86_64 0:4.023-5.17.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-DBI.x86_64 0:1.627-4.8.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(RPC::PlClient) >= 0.2000 for package: perl-DBI-1.627-4.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(RPC::PlServer) >= 0.2001 for package: perl-DBI-1.627-4.8.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package perl-ExtUtils-Install.noarch 0:1.58-283.37.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl-devel for package: perl-ExtUtils-Install-1.58-283.37.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package perl-ExtUtils-Manifest.noarch 0:1.61-244.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-Test-Harness.noarch 0:3.28-2.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package perl-PlRPC.noarch 0:0.2020-14.7.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Net::Daemon) >= 0.13 for package: perl-PlRPC-0.2020-14.7.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Compress::Zlib) for package: perl-PlRPC-0.2020-14.7.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Net::Daemon::Test) for package: perl-PlRPC-0.2020-14.7.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Net::Daemon::Log) for package: perl-PlRPC-0.2020-14.7.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package perl-devel.x86_64 4:5.16.3-283.37.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: db4-devel for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: glibc-devel for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(ExtUtils::ParseXS) for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: /usr/include/db.h for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: gdbm-devel for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: systemtap-sdt-devel for package: 4:perl-devel-5.16.3-283.37.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package db4-devel.x86_64 0:4.7.25-18.11.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: db4-cxx = 4.7.25-18.11.amzn1 for package: db4-devel-4.7.25-18.11.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package gdbm-devel.x86_64 0:1.8.0-36.6.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package glibc-devel.x86_64 0:2.17-55.145.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: glibc-headers = 2.17-55.145.amzn1 for package: glibc-devel-2.17-55.145.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-55.145.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package perl-ExtUtils-ParseXS.noarch 1:3.18-2.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-IO-Compress.noarch 0:2.061-2.12.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Compress::Raw::Zlib) >= 2.061 for package: perl-IO-Compress-2.061-2.12.amzn1.noarch
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.12.amzn1.noarch
+2015-09-18 01:46:21 [stdout]---> Package perl-Net-Daemon.noarch 0:0.48-5.5.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package systemtap-sdt-devel.x86_64 0:2.5-3.26.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package db4-cxx.x86_64 0:4.7.25-18.11.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package glibc-headers.x86_64 0:2.17-55.145.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-55.145.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-55.145.amzn1.x86_64
+2015-09-18 01:46:21 [stdout]---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.11.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.1.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Running transaction check
+2015-09-18 01:46:21 [stdout]---> Package kernel-headers.x86_64 0:3.14.48-33.39.amzn1 will be installed
+2015-09-18 01:46:21 [stdout]--> Finished Dependency Resolution
+2015-09-18 01:46:21 [stdout]
+2015-09-18 01:46:21 [stdout]Dependencies Resolved
+2015-09-18 01:46:21 [stdout]
+2015-09-18 01:46:21 [stdout]================================================================================
+2015-09-18 01:46:21 [stdout] Package                  Arch    Version                   Repository     Size
+2015-09-18 01:46:21 [stdout]================================================================================
+2015-09-18 01:46:21 [stdout]Installing for group install "MySQL Database":
+2015-09-18 01:46:21 [stdout] mysql-server             noarch  5.5-1.6.amzn1             amzn-main     2.8 k
+2015-09-18 01:46:21 [stdout]Installing for group install "PHP Support":
+2015-09-18 01:46:21 [stdout] php                      x86_64  5.3.29-1.8.amzn1          amzn-updates  2.8 M
+2015-09-18 01:46:21 [stdout] php-gd                   x86_64  5.3.29-1.8.amzn1          amzn-updates  219 k
+2015-09-18 01:46:21 [stdout] php-pdo                  x86_64  5.3.29-1.8.amzn1          amzn-updates  170 k
+2015-09-18 01:46:21 [stdout] php-pear                 noarch  1:1.9.5-2.17.amzn1        amzn-main     434 k
+2015-09-18 01:46:21 [stdout] php-xml                  x86_64  5.3.29-1.8.amzn1          amzn-updates  234 k
+2015-09-18 01:46:21 [stdout]Installing for group install "Web Server":
+2015-09-18 01:46:21 [stdout] crypto-utils             x86_64  2.4.1-42.9.amzn1          amzn-main      83 k
+2015-09-18 01:46:21 [stdout] mod_perl                 x86_64  2.0.7-7.27.amzn1          amzn-main     3.8 M
+2015-09-18 01:46:21 [stdout] mod_ssl                  x86_64  1:2.2.31-1.6.amzn1        amzn-updates  106 k
+2015-09-18 01:46:21 [stdout] mod_wsgi-python27        x86_64  3.2-6.11.amzn1            amzn-main      75 k
+2015-09-18 01:46:21 [stdout]Installing for dependencies:
+2015-09-18 01:46:21 [stdout] db4-cxx                  x86_64  4.7.25-18.11.amzn1        amzn-main     688 k
+2015-09-18 01:46:21 [stdout] db4-devel                x86_64  4.7.25-18.11.amzn1        amzn-main     7.0 M
+2015-09-18 01:46:21 [stdout] gdbm-devel               x86_64  1.8.0-36.6.amzn1          amzn-main      21 k
+2015-09-18 01:46:21 [stdout] glibc-devel              x86_64  2.17-55.145.amzn1         amzn-updates  1.1 M
+2015-09-18 01:46:21 [stdout] glibc-headers            x86_64  2.17-55.145.amzn1         amzn-updates  723 k
+2015-09-18 01:46:21 [stdout] kernel-headers           x86_64  3.14.48-33.39.amzn1       amzn-updates  964 k
+2015-09-18 01:46:21 [stdout] libXpm                   x86_64  3.5.10-2.9.amzn1          amzn-main      54 k
+2015-09-18 01:46:21 [stdout] mysql55                  x86_64  5.5.42-1.4.amzn1          amzn-main     7.5 M
+2015-09-18 01:46:21 [stdout] mysql55-common           x86_64  5.5.42-1.4.amzn1          amzn-main      48 k
+2015-09-18 01:46:21 [stdout] mysql55-libs             x86_64  5.5.42-1.4.amzn1          amzn-main     813 k
+2015-09-18 01:46:21 [stdout] mysql55-server           x86_64  5.5.42-1.4.amzn1          amzn-main      13 M
+2015-09-18 01:46:21 [stdout] perl-BSD-Resource        x86_64  1.29.03-3.5.amzn1         amzn-main      35 k
+2015-09-18 01:46:21 [stdout] perl-Compress-Raw-Bzip2  x86_64  2.061-3.11.amzn1          amzn-main      33 k
+2015-09-18 01:46:21 [stdout] perl-Compress-Raw-Zlib   x86_64  1:2.061-4.1.amzn1         amzn-main      61 k
+2015-09-18 01:46:21 [stdout] perl-DBD-MySQL           x86_64  4.023-5.17.amzn1          amzn-main     148 k
+2015-09-18 01:46:21 [stdout] perl-DBI                 x86_64  1.627-4.8.amzn1           amzn-main     855 k
+2015-09-18 01:46:21 [stdout] perl-Data-Dumper         x86_64  2.145-3.5.amzn1           amzn-main      49 k
+2015-09-18 01:46:21 [stdout] perl-ExtUtils-Install    noarch  1.58-283.37.amzn1         amzn-main      76 k
+2015-09-18 01:46:21 [stdout] perl-ExtUtils-MakeMaker  noarch  6.68-3.5.amzn1            amzn-main     292 k
+2015-09-18 01:46:21 [stdout] perl-ExtUtils-Manifest   noarch  1.61-244.5.amzn1          amzn-main      32 k
+2015-09-18 01:46:21 [stdout] perl-ExtUtils-ParseXS    noarch  1:3.18-2.5.amzn1          amzn-main      81 k
+2015-09-18 01:46:21 [stdout] perl-IO-Compress         noarch  2.061-2.12.amzn1          amzn-main     298 k
+2015-09-18 01:46:21 [stdout] perl-Linux-Pid           x86_64  0.04-8.4.amzn1            amzn-main      12 k
+2015-09-18 01:46:21 [stdout] perl-Net-Daemon          noarch  0.48-5.5.amzn1            amzn-main      58 k
+2015-09-18 01:46:21 [stdout] perl-Newt                x86_64  1.08-36.8.amzn1           amzn-main      71 k
+2015-09-18 01:46:21 [stdout] perl-PlRPC               noarch  0.2020-14.7.amzn1         amzn-main      39 k
+2015-09-18 01:46:21 [stdout] perl-Test-Harness        noarch  3.28-2.5.amzn1            amzn-main     313 k
+2015-09-18 01:46:21 [stdout] perl-devel               x86_64  4:5.16.3-283.37.amzn1     amzn-main     521 k
+2015-09-18 01:46:21 [stdout] php-cli                  x86_64  5.3.29-1.8.amzn1          amzn-updates  2.6 M
+2015-09-18 01:46:21 [stdout] php-common               x86_64  5.3.29-1.8.amzn1          amzn-updates  1.0 M
+2015-09-18 01:46:21 [stdout] php-process              x86_64  5.3.29-1.8.amzn1          amzn-updates   66 k
+2015-09-18 01:46:21 [stdout] systemtap-sdt-devel      x86_64  2.5-3.26.amzn1            amzn-main      64 k
+2015-09-18 01:46:21 [stdout] t1lib                    x86_64  5.1.2-6.5.amzn1           amzn-main     179 k
+2015-09-18 01:46:21 [stdout]
+2015-09-18 01:46:21 [stdout]Transaction Summary
+2015-09-18 01:46:21 [stdout]================================================================================
+2015-09-18 01:46:21 [stdout]Install  10 Packages (+33 Dependent packages)
+2015-09-18 01:46:21 [stdout]
+2015-09-18 01:46:21 [stdout]Total download size: 47 M
+2015-09-18 01:46:21 [stdout]Installed size: 147 M
+2015-09-18 01:46:21 [stdout]Downloading packages:
+2015-09-18 01:46:25 [stdout]--------------------------------------------------------------------------------
+2015-09-18 01:46:25 [stdout]Total                                               12 MB/s |  47 MB  00:03     
+2015-09-18 01:46:25 [stdout]Running transaction check
+2015-09-18 01:46:25 [stdout]Running transaction test
+2015-09-18 01:46:25 [stdout]Transaction test succeeded
+2015-09-18 01:46:25 [stdout]Running transaction
+2015-09-18 01:46:25 [stdout]  Installing : php-common-5.3.29-1.8.amzn1.x86_64                          1/43 
+2015-09-18 01:46:25 [stdout]  Installing : mysql55-libs-5.5.42-1.4.amzn1.x86_64                        2/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Data-Dumper-2.145-3.5.amzn1.x86_64                     3/43 
+2015-09-18 01:46:26 [stdout]  Installing : php-cli-5.3.29-1.8.amzn1.x86_64                             4/43 
+2015-09-18 01:46:26 [stdout]  Installing : mysql55-common-5.5.42-1.4.amzn1.x86_64                      5/43 
+2015-09-18 01:46:26 [stdout]  Installing : mysql55-5.5.42-1.4.amzn1.x86_64                             6/43 
+2015-09-18 01:46:26 [stdout]  Installing : php-process-5.3.29-1.8.amzn1.x86_64                         7/43 
+2015-09-18 01:46:26 [stdout]  Installing : php-xml-5.3.29-1.8.amzn1.x86_64                             8/43 
+2015-09-18 01:46:26 [stdout]  Installing : libXpm-3.5.10-2.9.amzn1.x86_64                              9/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Test-Harness-3.28-2.5.amzn1.noarch                    10/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Newt-1.08-36.8.amzn1.x86_64                           11/43 
+2015-09-18 01:46:26 [stdout]  Installing : kernel-headers-3.14.48-33.39.amzn1.x86_64                  12/43 
+2015-09-18 01:46:26 [stdout]  Installing : glibc-headers-2.17-55.145.amzn1.x86_64                     13/43 
+2015-09-18 01:46:26 [stdout]  Installing : glibc-devel-2.17-55.145.amzn1.x86_64                       14/43 
+2015-09-18 01:46:26 [stdout]  Installing : systemtap-sdt-devel-2.5-3.26.amzn1.x86_64                  15/43 
+2015-09-18 01:46:26 [stdout]  Installing : gdbm-devel-1.8.0-36.6.amzn1.x86_64                         16/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Compress-Raw-Bzip2-2.061-3.11.amzn1.x86_64            17/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Net-Daemon-0.48-5.5.amzn1.noarch                      18/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-Linux-Pid-0.04-8.4.amzn1.x86_64                       19/43 
+2015-09-18 01:46:26 [stdout]  Installing : perl-ExtUtils-Manifest-1.61-244.5.amzn1.noarch             20/43 
+2015-09-18 01:46:26 [stdout]  Installing : t1lib-5.1.2-6.5.amzn1.x86_64                               21/43 
+2015-09-18 01:46:26 [stdout]  Installing : 1:perl-Compress-Raw-Zlib-2.061-4.1.amzn1.x86_64            22/43 
+2015-09-18 01:46:27 [stdout]  Installing : perl-IO-Compress-2.061-2.12.amzn1.noarch                   23/43 
+2015-09-18 01:46:27 [stdout]  Installing : perl-PlRPC-0.2020-14.7.amzn1.noarch                        24/43 
+2015-09-18 01:46:27 [stdout]  Installing : perl-DBI-1.627-4.8.amzn1.x86_64                            25/43 
+2015-09-18 01:46:27 [stdout]  Installing : perl-DBD-MySQL-4.023-5.17.amzn1.x86_64                     26/43 
+2015-09-18 01:46:27 [stdout]  Installing : mysql55-server-5.5.42-1.4.amzn1.x86_64                     27/43 
+2015-09-18 01:46:28 [stdout]  Installing : db4-cxx-4.7.25-18.11.amzn1.x86_64                          28/43 
+2015-09-18 01:46:28 [stdout]  Installing : db4-devel-4.7.25-18.11.amzn1.x86_64                        29/43 
+2015-09-18 01:46:28 [stdout]  Installing : 1:perl-ExtUtils-ParseXS-3.18-2.5.amzn1.noarch              30/43 
+2015-09-18 01:46:28 [stdout]  Installing : perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch              31/43 
+2015-09-18 01:46:28 [stdout]  Installing : perl-ExtUtils-Install-1.58-283.37.amzn1.noarch             32/43 
+2015-09-18 01:46:28 [stdout]  Installing : 4:perl-devel-5.16.3-283.37.amzn1.x86_64                    33/43 
+2015-09-18 01:46:28 [stdout]  Installing : perl-BSD-Resource-1.29.03-3.5.amzn1.x86_64                 34/43 
+2015-09-18 01:46:28 [stdout]  Installing : mod_perl-2.0.7-7.27.amzn1.x86_64                           35/43 
+2015-09-18 01:46:28 [stdout]  Installing : mysql-server-5.5-1.6.amzn1.noarch                          36/43 
+2015-09-18 01:46:28 [stdout]  Installing : php-gd-5.3.29-1.8.amzn1.x86_64                             37/43 
+2015-09-18 01:46:28 [stdout]  Installing : crypto-utils-2.4.1-42.9.amzn1.x86_64                       38/43 
+2015-09-18 01:46:28 [stdout]  Installing : 1:php-pear-1.9.5-2.17.amzn1.noarch                         39/43 
+2015-09-18 01:46:29 [stdout]  Installing : php-5.3.29-1.8.amzn1.x86_64                                40/43 
+2015-09-18 01:46:29 [stdout]  Installing : php-pdo-5.3.29-1.8.amzn1.x86_64                            41/43 
+2015-09-18 01:46:29 [stdout]  Installing : 1:mod_ssl-2.2.31-1.6.amzn1.x86_64                          42/43 
+2015-09-18 01:46:29 [stdout]  Installing : mod_wsgi-python27-3.2-6.11.amzn1.x86_64                    43/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-DBI-1.627-4.8.amzn1.x86_64                             1/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-BSD-Resource-1.29.03-3.5.amzn1.x86_64                  2/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-process-5.3.29-1.8.amzn1.x86_64                         3/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : db4-cxx-4.7.25-18.11.amzn1.x86_64                           4/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : crypto-utils-2.4.1-42.9.amzn1.x86_64                        5/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : db4-devel-4.7.25-18.11.amzn1.x86_64                         6/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.1.amzn1.x86_64             7/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mysql-server-5.5-1.6.amzn1.noarch                           8/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-xml-5.3.29-1.8.amzn1.x86_64                             9/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : t1lib-5.1.2-6.5.amzn1.x86_64                               10/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-PlRPC-0.2020-14.7.amzn1.noarch                        11/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mysql55-common-5.5.42-1.4.amzn1.x86_64                     12/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-ExtUtils-Manifest-1.61-244.5.amzn1.noarch             13/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mod_wsgi-python27-3.2-6.11.amzn1.x86_64                    14/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Linux-Pid-0.04-8.4.amzn1.x86_64                       15/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Net-Daemon-0.48-5.5.amzn1.noarch                      16/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Compress-Raw-Bzip2-2.061-3.11.amzn1.x86_64            17/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-5.3.29-1.8.amzn1.x86_64                                18/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : 1:perl-ExtUtils-ParseXS-3.18-2.5.amzn1.noarch              19/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Data-Dumper-2.145-3.5.amzn1.x86_64                    20/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-gd-5.3.29-1.8.amzn1.x86_64                             21/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : gdbm-devel-1.8.0-36.6.amzn1.x86_64                         22/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-common-5.3.29-1.8.amzn1.x86_64                         23/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : systemtap-sdt-devel-2.5-3.26.amzn1.x86_64                  24/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : kernel-headers-3.14.48-33.39.amzn1.x86_64                  25/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : 1:mod_ssl-2.2.31-1.6.amzn1.x86_64                          26/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-DBD-MySQL-4.023-5.17.amzn1.x86_64                     27/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-cli-5.3.29-1.8.amzn1.x86_64                            28/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Newt-1.08-36.8.amzn1.x86_64                           29/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-ExtUtils-MakeMaker-6.68-3.5.amzn1.noarch              30/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-Test-Harness-3.28-2.5.amzn1.noarch                    31/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mod_perl-2.0.7-7.27.amzn1.x86_64                           32/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : 4:perl-devel-5.16.3-283.37.amzn1.x86_64                    33/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mysql55-server-5.5.42-1.4.amzn1.x86_64                     34/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : glibc-devel-2.17-55.145.amzn1.x86_64                       35/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-IO-Compress-2.061-2.12.amzn1.noarch                   36/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mysql55-libs-5.5.42-1.4.amzn1.x86_64                       37/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : php-pdo-5.3.29-1.8.amzn1.x86_64                            38/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : 1:php-pear-1.9.5-2.17.amzn1.noarch                         39/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : perl-ExtUtils-Install-1.58-283.37.amzn1.noarch             40/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : glibc-headers-2.17-55.145.amzn1.x86_64                     41/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : mysql55-5.5.42-1.4.amzn1.x86_64                            42/43 
+2015-09-18 01:46:29 [stdout]  Verifying  : libXpm-3.5.10-2.9.amzn1.x86_64                             43/43 
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Installed:
+2015-09-18 01:46:29 [stdout]  crypto-utils.x86_64 0:2.4.1-42.9.amzn1                                        
+2015-09-18 01:46:29 [stdout]  mod_perl.x86_64 0:2.0.7-7.27.amzn1                                            
+2015-09-18 01:46:29 [stdout]  mod_ssl.x86_64 1:2.2.31-1.6.amzn1                                             
+2015-09-18 01:46:29 [stdout]  mod_wsgi-python27.x86_64 0:3.2-6.11.amzn1                                     
+2015-09-18 01:46:29 [stdout]  mysql-server.noarch 0:5.5-1.6.amzn1                                           
+2015-09-18 01:46:29 [stdout]  php.x86_64 0:5.3.29-1.8.amzn1                                                 
+2015-09-18 01:46:29 [stdout]  php-gd.x86_64 0:5.3.29-1.8.amzn1                                              
+2015-09-18 01:46:29 [stdout]  php-pdo.x86_64 0:5.3.29-1.8.amzn1                                             
+2015-09-18 01:46:29 [stdout]  php-pear.noarch 1:1.9.5-2.17.amzn1                                            
+2015-09-18 01:46:29 [stdout]  php-xml.x86_64 0:5.3.29-1.8.amzn1                                             
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Dependency Installed:
+2015-09-18 01:46:29 [stdout]  db4-cxx.x86_64 0:4.7.25-18.11.amzn1                                           
+2015-09-18 01:46:29 [stdout]  db4-devel.x86_64 0:4.7.25-18.11.amzn1                                         
+2015-09-18 01:46:29 [stdout]  gdbm-devel.x86_64 0:1.8.0-36.6.amzn1                                          
+2015-09-18 01:46:29 [stdout]  glibc-devel.x86_64 0:2.17-55.145.amzn1                                        
+2015-09-18 01:46:29 [stdout]  glibc-headers.x86_64 0:2.17-55.145.amzn1                                      
+2015-09-18 01:46:29 [stdout]  kernel-headers.x86_64 0:3.14.48-33.39.amzn1                                   
+2015-09-18 01:46:29 [stdout]  libXpm.x86_64 0:3.5.10-2.9.amzn1                                              
+2015-09-18 01:46:29 [stdout]  mysql55.x86_64 0:5.5.42-1.4.amzn1                                             
+2015-09-18 01:46:29 [stdout]  mysql55-common.x86_64 0:5.5.42-1.4.amzn1                                      
+2015-09-18 01:46:29 [stdout]  mysql55-libs.x86_64 0:5.5.42-1.4.amzn1                                        
+2015-09-18 01:46:29 [stdout]  mysql55-server.x86_64 0:5.5.42-1.4.amzn1                                      
+2015-09-18 01:46:29 [stdout]  perl-BSD-Resource.x86_64 0:1.29.03-3.5.amzn1                                  
+2015-09-18 01:46:29 [stdout]  perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.11.amzn1                             
+2015-09-18 01:46:29 [stdout]  perl-Compress-Raw-Zlib.x86_64 1:2.061-4.1.amzn1                               
+2015-09-18 01:46:29 [stdout]  perl-DBD-MySQL.x86_64 0:4.023-5.17.amzn1                                      
+2015-09-18 01:46:29 [stdout]  perl-DBI.x86_64 0:1.627-4.8.amzn1                                             
+2015-09-18 01:46:29 [stdout]  perl-Data-Dumper.x86_64 0:2.145-3.5.amzn1                                     
+2015-09-18 01:46:29 [stdout]  perl-ExtUtils-Install.noarch 0:1.58-283.37.amzn1                              
+2015-09-18 01:46:29 [stdout]  perl-ExtUtils-MakeMaker.noarch 0:6.68-3.5.amzn1                               
+2015-09-18 01:46:29 [stdout]  perl-ExtUtils-Manifest.noarch 0:1.61-244.5.amzn1                              
+2015-09-18 01:46:29 [stdout]  perl-ExtUtils-ParseXS.noarch 1:3.18-2.5.amzn1                                 
+2015-09-18 01:46:29 [stdout]  perl-IO-Compress.noarch 0:2.061-2.12.amzn1                                    
+2015-09-18 01:46:29 [stdout]  perl-Linux-Pid.x86_64 0:0.04-8.4.amzn1                                        
+2015-09-18 01:46:29 [stdout]  perl-Net-Daemon.noarch 0:0.48-5.5.amzn1                                       
+2015-09-18 01:46:29 [stdout]  perl-Newt.x86_64 0:1.08-36.8.amzn1                                            
+2015-09-18 01:46:29 [stdout]  perl-PlRPC.noarch 0:0.2020-14.7.amzn1                                         
+2015-09-18 01:46:29 [stdout]  perl-Test-Harness.noarch 0:3.28-2.5.amzn1                                     
+2015-09-18 01:46:29 [stdout]  perl-devel.x86_64 4:5.16.3-283.37.amzn1                                       
+2015-09-18 01:46:29 [stdout]  php-cli.x86_64 0:5.3.29-1.8.amzn1                                             
+2015-09-18 01:46:29 [stdout]  php-common.x86_64 0:5.3.29-1.8.amzn1                                          
+2015-09-18 01:46:29 [stdout]  php-process.x86_64 0:5.3.29-1.8.amzn1                                         
+2015-09-18 01:46:29 [stdout]  systemtap-sdt-devel.x86_64 0:2.5-3.26.amzn1                                   
+2015-09-18 01:46:29 [stdout]  t1lib.x86_64 0:5.1.2-6.5.amzn1                                                
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Complete!
+2015-09-18 01:46:29 [stdout]Loaded plugins: priorities, update-motd, upgrade-helper
+2015-09-18 01:46:29 [stdout]Resolving Dependencies
+2015-09-18 01:46:29 [stdout]--> Running transaction check
+2015-09-18 01:46:29 [stdout]---> Package php-mysql.x86_64 0:5.3.29-1.8.amzn1 will be installed
+2015-09-18 01:46:29 [stdout]--> Finished Dependency Resolution
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Dependencies Resolved
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]================================================================================
+2015-09-18 01:46:29 [stdout] Package         Arch         Version                  Repository          Size
+2015-09-18 01:46:29 [stdout]================================================================================
+2015-09-18 01:46:29 [stdout]Installing:
+2015-09-18 01:46:29 [stdout] php-mysql       x86_64       5.3.29-1.8.amzn1         amzn-updates       178 k
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Transaction Summary
+2015-09-18 01:46:29 [stdout]================================================================================
+2015-09-18 01:46:29 [stdout]Install  1 Package
+2015-09-18 01:46:29 [stdout]
+2015-09-18 01:46:29 [stdout]Total download size: 178 k
+2015-09-18 01:46:29 [stdout]Installed size: 445 k
+2015-09-18 01:46:29 [stdout]Downloading packages:
+2015-09-18 01:46:30 [stdout]Running transaction check
+2015-09-18 01:46:30 [stdout]Running transaction test
+2015-09-18 01:46:30 [stdout]Transaction test succeeded
+2015-09-18 01:46:30 [stdout]Running transaction
+2015-09-18 01:46:30 [stdout]  Installing : php-mysql-5.3.29-1.8.amzn1.x86_64                            1/1 
+2015-09-18 01:46:30 [stdout]  Verifying  : php-mysql-5.3.29-1.8.amzn1.x86_64                            1/1 
+2015-09-18 01:46:30 [stdout]
+2015-09-18 01:46:30 [stdout]Installed:
+2015-09-18 01:46:30 [stdout]  php-mysql.x86_64 0:5.3.29-1.8.amzn1                                           
+2015-09-18 01:46:30 [stdout]
+2015-09-18 01:46:30 [stdout]Complete!
+2015-09-18 01:46:33 LifecycleEvent - AfterInstall
+2015-09-18 01:46:33 Script - scripts/change_permissions.sh
+2015-09-18 01:46:34 LifecycleEvent - ApplicationStart
+2015-09-18 01:46:34 Script - scripts/start_server.sh
+2015-09-18 01:46:34 [stdout]Starting httpd: 
+2015-09-18 01:46:34 [stdout]Initializing MySQL database:  Installing MySQL system tables...
+2015-09-18 01:46:34 [stdout]OK
+2015-09-18 01:46:34 [stdout]Filling help tables...
+2015-09-18 01:46:34 [stdout]OK
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]To start mysqld at boot time you have to copy
+2015-09-18 01:46:34 [stdout]support-files/mysql.server to the right place for your system
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
+2015-09-18 01:46:34 [stdout]To do so, start the server, then issue the following commands:
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]/usr/bin/mysqladmin -u root password 'new-password'
+2015-09-18 01:46:34 [stdout]/usr/bin/mysqladmin -u root -h ip-172-31-24-76 password 'new-password'
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]Alternatively you can run:
+2015-09-18 01:46:34 [stdout]/usr/bin/mysql_secure_installation
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]which will also give you the option of removing the test
+2015-09-18 01:46:34 [stdout]databases and anonymous user created by default.  This is
+2015-09-18 01:46:34 [stdout]strongly recommended for production servers.
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]See the manual for more instructions.
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]You can start the MySQL daemon with:
+2015-09-18 01:46:34 [stdout]cd /usr ; /usr/bin/mysqld_safe &
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]You can test the MySQL daemon with mysql-test-run.pl
+2015-09-18 01:46:34 [stdout]cd /usr/mysql-test ; perl mysql-test-run.pl
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout]Please report any problems at http://bugs.mysql.com/
+2015-09-18 01:46:34 [stdout]
+2015-09-18 01:46:34 [stdout][  OK  ]
+2015-09-18 01:46:36 [stdout]Starting mysqld:  [  OK  ]
+2015-09-18 02:36:10 LifecycleEvent - ApplicationStop
+2015-09-18 02:36:10 Script - scripts/stop_server.sh
+2015-09-18 02:36:10 [stdout]Stopping httpd: [  OK  ]
+2015-09-18 02:36:12 [stdout]Stopping mysqld:  [  OK  ]

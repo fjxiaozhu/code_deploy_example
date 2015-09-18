@@ -1,0 +1,212 @@
+{% extends "bootstrap/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block title %}This is an example page{% endblock %}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    {% block content %}
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+	        <h1 class="page-header"><span id="page-title">hello world.</span> 
+                    <small>from humble instance <mark><span id="header-div">{{instance_id}} </span></mark></small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+	<div class="row">
+          <div class="col-md-4">
+	    <img src="https://s3-us-west-2.amazonaws.com/magic-8ball/Magic8ball.jpg">
+          </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+	      <span class="center-block" id="main-prediction">
+		<h1 style="font-size:300%">"{{random_choice}}"</h1>
+	      </span>
+            </div>
+	</div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">LB State of Instances</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6" id="lb-state-1" style="background-color:LightGreen;">
+              <h1>InService</h1>
+            </div>
+
+            <div class="col-sm-3 col-xs-6" id="lb-state-2" style="background-color:LightGreen;">
+              <h1>InService</h1>
+            </div>
+
+            <div class="col-sm-3 col-xs-6" id="lb-state-3" style="background-color:LightGreen;">
+              <h1>InService</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; AWS 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    {% endblock %}
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- auto-refresh our prediciton -->
+    {% block scripts %}
+    {{super()}}
+    <script type=text/javascript>
+      $SCRIPT_ROOT = 'http://magic-eight-ball-python-996710794.us-west-2.elb.amazonaws.com';
+      $(function() {
+        $(setInterval(function() {
+            $.getJSON($SCRIPT_ROOT + '/_get_new_fortune', function(data) {
+              $("#main-prediction").hide().html("<h1 style=\"font-size:300%\">\"" + data.random_choice + "\"</h1>").fadeIn('slow');
+              $("#header-div").hide().html(data.instance_id).fadeIn('slow');
+            });
+          }, 5000)
+        )
+      });
+
+      $(function() {
+        $(setInterval(function() {
+            $.getJSON($SCRIPT_ROOT + '/_get_title', function(data) {
+              $("#page-title").hide().html(data.title).fadeIn('slow');
+            });
+          }, 5000)
+        )
+      });
+    </script>
+
+    <!-- auto-refresh lb state -->
+    <script type=text/javascript>
+      $(function() {
+        previousState1 = "InService";
+        previousState2 = "InService";
+        previousState3 = "InService";
+      });
+
+      $SCRIPT_ROOT = 'http://magic-eight-ball-python-996710794.us-west-2.elb.amazonaws.com';
+      $(function() {
+        $(setInterval(function() {
+            $.getJSON($SCRIPT_ROOT + '/_get_lb_info', function(data) {
+              if(data['i-86469870'] != undefined && data['i-86469870'] != previousState1) {
+                previousState1 = data['i-86469870'];
+                if(data['i-86469870'] == 'OutOfService') {
+                  $("#lb-state-1").css("background-color","LightPink");
+                } else {
+                  $("#lb-state-1").css("background-color","LightGreen"); 
+                }
+                $("#lb-state-1").hide().html("<h1>i-86469870: " + data['i-86469870'] + "</h1>").fadeIn('slow');
+              }
+              if(data['i-2c30f921'] != undefined && data['i-2c30f921'] != previousState2) {
+                previousState2 = data['i-2c30f921'];
+                if(data['i-2c30f921'] == 'OutOfService') {
+                  $("#lb-state-2").css("background-color","LightPink");
+                } else {
+                  $("#lb-state-2").css("background-color","LightGreen"); 
+                }
+                $("#lb-state-2").hide().html("<h1>i-2c30f921: " + data['i-2c30f921'] + "</h1>").fadeIn('slow');
+              }
+              if(data['i-914d2d59'] != undefined && data['i-914d2d59'] != previousState3) {
+                previousState3 = data['i-914d2d59'];
+                if(data['i-914d2d59'] == 'OutOfService') {
+                  $("#lb-state-3").css("background-color","LightPink");
+                }else {
+                  $("#lb-state-3").css("background-color","LightGreen");
+                }
+
+                $("#lb-state-3").hide().html("<h1>i-914d2d59: " + data['i-914d2d59'] + "</h1>").fadeIn('slow');
+              }
+            });
+          }, 3000)
+        )
+      });
+    </script>
+    {% endblock %}
+
+</body>
+
+</html>
